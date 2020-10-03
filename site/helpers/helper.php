@@ -276,12 +276,16 @@ class SectionExHelper
 			jimport( 'joomla.form.form' );
 			$comParams	= new JRegistry($component->params);
 			$maps		= $comParams->toArray();
+            $mapsData 	= $maps['data'];
 
-			foreach( $maps['data'] as $key => $value )
-			{
-				if( $params->get( $key ) == 'global' )
+            if (is_array($mapsData) || is_object($mapsData))
+ 			{
+				foreach( $maps['data'] as $key => $value )
 				{
-					$params->set( $key , $value );
+					if( $params->get( $key ) == 'global' )
+					{
+						$params->set( $key , $value );
+					}
 				}
 			}
 		}

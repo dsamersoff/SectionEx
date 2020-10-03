@@ -64,7 +64,7 @@ class SectionExController extends SectionExControllerParent
 	 * @access	public
 	 */
 
-	function display()
+	function display($cachable = false, $urlparams = Array())
 	{
 		$document	=& 	JFactory::getDocument();
 		$mainframe  =& 	JFactory::getApplication();

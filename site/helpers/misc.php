@@ -27,8 +27,8 @@ class RkHelper
 {
 	function getIdOfActiveMenu()
 	{
-		$menus = &JSite::getMenu();
-		$myMenuItem  = $menus->getActive();
+                $app              = JFactory::getApplication();
+                $myMenuItem       = $app->getMenu()->getActive();
 
 		// -> is there any active menu?
 		if ($myMenuItem != null)
