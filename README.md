@@ -1,0 +1,2 @@
+# SectionEx
+SectionEx Joomla Extension
