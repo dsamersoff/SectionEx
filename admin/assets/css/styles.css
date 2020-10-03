@@ -1,0 +1,184 @@
+/**
+ * @package		SectionEx
+ * @copyright	Copyright (C) 2008 Robert Kuster. All rights reserved.
+ * @license		GNU/GPL, see LICENSE.php
+ * @link        http://www.stackideas.com  
+ *
+ * SectionEx is free software. This version may have been modified pursuant
+ * to the GNU General Public License, and as distributed it includes or
+ * is derivative of works licensed under the GNU General Public License or
+ * other free or open source software licenses.
+ * See COPYRIGHT.php for copyright notices and details.
+ */
+
+/** Toolbar icons **/
+div.header.icon-48-home,
+div.pagetitle.icon-48-home{
+	background: transparent url(../images/logos/large.png) no-repeat;
+}
+
+div.header.icon-48-settings,
+div.pagetitle.icon-48-settings{
+    background: transparent url(../images/panels/settings.png) no-repeat 0 center;   
+}
+
+/** Panel icons **/
+#sectionex-panel{
+	width: 100%;
+}
+
+#sectionex-panel ul#sectionex-items,
+#sectionex-panel ul#sectionex-items li{background:none;border:none;clear:none;float:none;list-style:none;list-style-image:none;margin:0;padding:0;overflow:visible;width:auto}
+#sectionex-panel ul#sectionex-items{display:inline-block;width:100%;margin:10px 0 0}
+#sectionex-panel ul#sectionex-items li
+{
+	position: relative;
+	float: left;
+    display:inline-block;
+    width:20%;
+	text-align: center;
+    margin-bottom:10px
+}
+#sectionex-panel ul#sectionex-items li:hover div.item-description{
+	display: block;
+}
+
+#sectionex-panel ul#sectionex-items li div.tipsArrow{
+    background: url("../images/tipsArrow.png") no-repeat scroll 0 center transparent;
+    height: 10px;
+    left: -7px;
+    position: absolute;
+    top: 7px;
+    width: 7px;
+}
+
+#sectionex-panel ul#sectionex-items li div.item-description{
+    background: none repeat scroll 0 0 #333333;
+    border: 1px solid #000000;
+    display: none;
+    color: #fff;
+    padding: 3px 7px 7px;
+    position: absolute;
+	left: 100%;
+    text-align: left;
+    top: -3px;
+    width: 250px;
+    z-index: 999;
+    text-shadow: none;
+}
+
+#sectionex-panel ul#sectionex-items li a {
+	height: 80px;
+	padding: 10px;
+	display: block;
+    margin-right:10px;
+    background:#f4f4f4;
+    border:1px solid #ccc;
+    text-shadow: 0 1px 1px #fff;
+	box-shadow: 0 1px 1px #f5f5f5;
+	-moz-box-shadow: 0 1px 1px #f5f5f5;
+	-moz-box-shadow:0 1px 1px #f5f5f5;
+	-webkit-box-shadow:0 1px 1px #f5f5f5;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background: -moz-linear-gradient(top, #fafafa 0%, #eeeeee 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#eeeeee));
+	background: -o-linear-gradient(top, #deefff 0%,#98bede 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#eeeeee',GradientType=0 );
+}
+
+#sectionex-panel ul#sectionex-items li:hover > a{border-color:#ccc #ccc #aaa}
+#sectionex-panel ul#sectionex-items li a img {
+	padding-top: 12px;
+}
+
+#sectionex-panel ul#sectionex-items li a .item-title {
+	display: block;
+	font: 14px/1.2 Arial,Tahoma;
+	font-weight: 700;
+	color: #666;
+	margin: 5px 0px;
+
+}
+#sectionex-panel ul#sectionex-items li a:hover {
+	text-decoration: none;
+}
+
+#sectionex-panel table.icon-item {
+	background: #f4f4f4;
+	border: 1px solid #ccc;
+	padding: 3px 5px 3px 5px;
+	height: 80px;
+	width: 100%;
+    text-shadow:0 1px 1px #fff;
+    box-shadow:0 1px 1px #f5f5f5;
+    -moz-box-shadow:0 1px 1px #f5f5f5;
+    -webkit-box-shadow:0 1px 1px #f5f5f5;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+    background: -moz-linear-gradient(top, #fafafa 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#eeeeee));
+    background: -o-linear-gradient(top, #deefff 0%,#98bede 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#eeeeee',GradientType=0 )
+}
+
+/** Panel guides **/
+#sectionex-panel #content-box * {
+	font-family: Tahoma;
+	font-size: 11px;
+}
+
+#content-box #guide {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    text-shadow: 0 1px 1px #FFFFFF;
+}
+
+	#content-box #guide ul li {
+		background: -moz-linear-gradient(center top , #FFFFFF 0%, #F0F1F2 100%) repeat scroll 0 0 transparent;
+		color: #555555;
+		padding: 0 10px 10px;
+	}
+
+.si_accordion{
+	width: 100%;
+}
+.si_accordion > h3 {
+    background: -moz-linear-gradient(center top , #F5F5F5 0%, #DDDDDD 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 1px 1px #FAFAFA;
+}
+	.si_accordion > h3 div {
+		border-top: 1px solid #FFFFFF;
+		padding: 6px 10px;
+	}
+
+/** Reset styles **/
+#content-box .reset-ul, #content-box .reset-ul li {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    clear: none;
+    float: none;
+    list-style: none outside none;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    width: auto;
+}
+
+div#toolbar-box div.header{font-family:Arial;font-size:26px;line-height:54px;color:#333}
+#content-box div#toolbar-box div.m{border-bottom:1px solid #ccc;padding:10px;margin:0;background:#fff;border-radius:0;-moz-border-radius:0;-webkit-border-radius:0}

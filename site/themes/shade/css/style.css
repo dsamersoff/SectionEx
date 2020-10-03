@@ -1,0 +1,222 @@
+#sectionex_wrapper {}
+
+	#sectionex_wrapper .rounded {
+		background: transparent url(../images/rounded.png) no-repeat 0 0;
+		padding: 10px;
+		margin-bottom: 10px;
+		position: relative;
+	}
+	
+	#sectionex_wrapper .rounded.search {
+		background: transparent url(../images/rounded.search.png) no-repeat 0 0;
+	}
+	
+	#sectionex_wrapper .rounded.section {
+		background: transparent url(../images/rounded.section.png) no-repeat 0 0;
+	}
+	
+	#sectionex_wrapper .rounded.index {
+		background: transparent url(../images/rounded.index.png) no-repeat 0 0;
+	}
+	
+		#sectionex_wrapper .rounded h2,
+		#sectionex_wrapper .rounded p {
+			padding: 0 0 0 25px;
+		}
+		
+		#sectionex_wrapper .rounded h2 {
+		 	margin: 0 0 10px;
+		}
+		
+	
+	#sectionex_wrapper .collapse-expand {
+		margin-left: 30px;
+	}
+	
+	#sectionex_wrapper .back_to_top {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+	}
+	/**
+	 * Section title
+	 * 
+	 * Shared same styling with .componentheading from Joomla! template
+	 * 	 	 	  
+	 */
+	.section_title {
+	
+	}
+	
+	
+	/**
+	 * Section Description 
+	 */
+	.section_description {
+		margin-bottom: 20px;
+	}
+	
+	
+	/**
+	 * Category title 
+	 */
+	.category_title {
+	
+	}
+	
+	
+	/**
+	 * Category Description
+	 */
+	.category_description {
+	 	margin: 10px 0 25px;
+	}
+	
+	
+	/**
+	 * Back to top link
+	 */	 	
+	a.back_to_top {
+		background: transparent url(../images/back_to_top.png) no-repeat 0 0;
+		font-size: 12px;
+		padding-left: 16px;
+		height: 16px;
+		line-height: 16px;
+		text-decoration: none;
+	}
+	a.back_to_top:hover {
+	 	background-position: 0 -16px;
+	}
+
+	a.se_rss{
+		font-size: 12px;
+		height: 16px;
+		line-height: 16px;
+		text-decoration: none;
+		display: block;
+		background: transparent url(../images/rss.png) no-repeat 0 0;
+		padding-left: 20px;
+		position: absolute;
+		top: 10px;
+		text-indent: -9999px;
+		right: 60px;
+	}
+	
+	/**
+	 * Table for article list
+	 * 
+	 * @file	default_articles.php
+	 */	 	 	
+	.table_article_list {
+	
+	}
+		
+		.table_article_list td {
+			vertical-align: top;	
+		}
+		
+		
+		.table_header_tr {
+			background: transparent url(../images/table_header_row.png) repeat-x 0 0;
+			height: 35px;
+		}
+		
+			.table_header_tr th {}
+			
+				.table_header_tr th a {
+					text-decoration: none;
+					text-shadow: 0 1px 1px #fff; 
+				}
+			
+		
+		
+	
+		/**
+		 * Column header for number
+		 */
+		.seth_num,
+		.setd_num {
+			text-align: center;
+			vertical-align: top;
+		 	width: 20px;
+		}
+		
+	
+		/**
+		 * Column header for article title
+		 */
+		.seth_title,
+		.setd_title {
+		                           
+		}
+		
+		
+	    /**
+		 * Column header for article created date
+		 */
+		.seth_cdate,
+		.setd_cdate {
+		                           
+		}   
+		
+		
+		/**
+		 * Column header for article modified date
+		 */
+		.seth_mdate,
+		.setd_mdate {
+		                           
+		}
+		
+		
+		/**
+		 * Column header for article author
+		 */
+		.seth_author,
+		.setd_author {
+			width: 100px;                           
+		}
+		
+		
+		/**
+		 * Column header for article vote
+		 */
+		.seth_vote,
+		.setd_vote {
+		                           
+		}
+		
+		
+		/**
+		 * Column header for article hits
+		 */
+		.seth_hits,
+		.setd_hits {
+		 	width: 30px;                          
+		}
+	
+	
+		.author,
+		.votes,
+		.created,
+		.modified,
+		.hits {
+			font-size: 90%;
+		}
+		
+		
+
+
+/**
+ * Row hover effect
+ */
+tr.sectiontableentry1:hover,
+tr.sectiontableentry2:hover {
+	background-color: #f7f7f7;
+} 
+
+
+
+.inputbox {
+	width: 90%;
+} 				

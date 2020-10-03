@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<extension type="component" version="3.0.0" method="upgrade">
+	<name>com_sectionex</name>
+
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>January 2014</creationDate>
+	<author>Robert Kuster</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>http://stackideas.com</authorUrl>
+	<copyright>2010 (c) StackIdeas. All rights reserved.</copyright>
+	<license>GNU GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>2.5.118</version>
+	<description>
+		SectionEx
+	</description>
+	<!-- Custom install file //-->
+	<scriptfile>script.php</scriptfile>
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+		<filename>constants.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		<filename>sectionex.php</filename>
+		<folder>assets</folder>
+		<folder>classes</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>themes</folder>
+		<folder>views</folder>
+	</files>
+	<languages folder="languages/site">
+		<language tag="en-GB">en-GB.com_sectionex.ini</language>
+	</languages>
+
+	<media folder="media">
+        <folder>com_sectionex</folder>
+	</media>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu link="option=com_sectionex" img="components/com_sectionex/assets/images/logos/favicon.png">SectionEx</menu>
+
+		<!-- Administration Main File Copy Section -->
+		<!-- Folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>sectionex.php</filename>
+			<filename>default.ini</filename>
+			<filename>install.helper.php</filename>
+			<filename>configuration.ini</filename>
+			<filename>admin.sectionex.php</filename>
+			<folder>assets</folder>
+			<folder>views</folder>
+			<folder>models</folder>
+		</files>
+
+		<languages folder="languages/admin">
+			<language tag="en-GB">en-GB.com_sectionex.ini</language>
+			<language tag="en-GB">en-GB.com_sectionex.sys.ini</language>
+	    </languages>
+	</administration>
+</extension>

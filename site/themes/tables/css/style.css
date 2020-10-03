@@ -1,0 +1,156 @@
+/* ###################### SectionEx component styles ###################### */
+
+/* wrapper */
+div#artcllist_wrap
+{
+	margin: 0px;
+	margin-left: 10px;
+	padding: 0px;
+}
+
+/* misc */
+/* "td.setddummy" is just a dummy entry. For some reason it enforces correct 
+(full width) rendering of SectionEx article tables on IE and Firefox but makes 
+problems on Opera -> let's disable it for opera! */
+td.setddummy
+{ 
+	width: 10%;
+}
+
+/* opera specific */
+@media screen and (min-width: 550px)
+{	
+	td.setddummy
+	{ 
+		display: none;
+	}
+}
+
+
+
+/* TOC */
+table.setbltoc
+{	
+	padding: 10px;
+}
+
+td.setdtoc 
+{
+}
+
+table.setbltoc ul
+{
+	margin-top: 0px; 
+	margin-bottom: 10px;
+	
+	padding-top: 0px; 
+	padding-bottom: 0px; 
+}
+
+
+/* Filter & Pagination */
+table.setbl_fltr
+{
+	border: 0;
+	border-spacing: 0;
+	padding: 0;
+	margin: 0 0 20px 25px;	
+	color: #888888;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: medium;
+	text-decoration: none;
+}
+
+td.setd_fltr
+{
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 6px;
+}
+
+td.setd_fltr  .inputbox 
+{
+	border: 1px solid #CCCCCC;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+input#sein_title, input#sein_cnt, input#sein_auth
+{
+	width: 90%; 
+}
+
+
+
+
+/* Table with Article list */
+table.setblartcllist 
+{	
+	margin-bottom: 25px;
+}
+
+a.selnktop
+{
+	font-weight: normal;
+	font-size: smaller;
+}
+
+a.se_rss
+{
+	font-size: 12px;
+	height: 16px;
+	line-height: 16px;
+	text-decoration: none;
+	background: transparent url(../images/rss.png) no-repeat 0 0;
+	padding-left: 20px;
+	text-indent: -9999px;
+}
+
+div.seartoptnldata span
+{
+	line-height: 140%;
+}
+
+/**
+ * Row hover effect
+ */
+tr.sectiontableentry1:hover,
+tr.sectiontableentry2:hover {
+	background-color: #f7f7f7;
+} 
+
+/* 
+ column spacing
+ Note: modify this to suit your needs 
+ */
+td.seth_num, td.setd_num
+{
+	width: 2%;
+	padding-left: 40px;
+	text-align: right;
+}
+
+td.seth_title, td.setd_title
+{
+	width: 45%;
+}
+
+td.seth_cdate, td.setd_cdate
+,td.seth_mdate, td.setd_mdate
+{
+	width: 80px;
+}
+
+td.seth_author , td.setd_author
+{
+	width: 100px;
+}
+
+td.seth_vote, td.setd_vote
+,td.seth_hits , td.setd_hits
+{
+	width: 5%;
+	text-align: center;
+}

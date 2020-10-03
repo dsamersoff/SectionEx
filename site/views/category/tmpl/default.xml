@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_SECTIONEX_SETTINGS_MAIN_VIEW_TITLE">
+		<message>
+			<![CDATA[STANDARD_SECTION_LAYOUT_DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>STANDARD LAYOUT TITLE</name>
+		<description>STANDARD LAYOUT TITLE DESCRIPTION</description>
+		<url>
+			<field name="id" type="section" label="SECTION" description="SECTION_DESC" />
+		</url>
+	</state>
+
+
+	<fields name="request">
+		<fieldset name="request">
+			<field name="id" type="category" extension="com_content" label="COM_SECTIONEX_SETTINGS_SELECT_CATEGORY" description="COM_SECTIONEX_SETTINGS_SELECT_CATEGORY_DESC" />
+		</fieldset>
+	</fields>
+	<fields name="params">
+		<fieldset name="category" label="Category Settings">
+			<field name="se_show_section_name" type="list" default="global" label="COM_SECTIONEX_SETTINGS_MAIN_TITLE" description="COM_SECTIONEX_SETTINGS_MAIN_TITLE_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_section_description" type="list" default="global" label="COM_SECTIONEX_SETTINGS_MAIN_DESCRIPTION" description="COM_SECTIONEX_SETTINGS_MAIN_DESCRIPTION_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_section_list" type="text" default="" size="25" label="COM_SECTIONEX_SETTINGS_ADDITIIONAL_CATEGORIES" description="COM_SECTIONEX_SETTINGS_ADDITIIONAL_CATEGORIES_DESC" />
+			<field name="se_categoryexclude_list" type="text" default="" size="25" label="COM_SECTIONEX_SETTINGS_EXCLUDE_CATEGORIES" description="COM_SECTIONEX_SETTINGS_EXCLUDE_CATEGORIES_DESC" />
+		</fieldset>
+
+		<fieldset name="basic" label="Display Settings">
+			<field name="se_themes" type="folderlist" default="" label="COM_SECTIONEX_SETTINGS_THEME" description="COM_SECTIONEX_SETTINGS_THEME_DESC" directory="components/com_sectionex/themes" hide_none="true" filter="" exclude="" stripext="" />
+			<field name="se_theme_override" type="list" default="1" label="COM_SECTIONEX_SETTINGS_ENFORCE_OVERRIDE" description="COM_SECTIONEX_SETTINGS_ENFORCE_OVERRIDE_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="se_section_list_br" type="list" default="global" label="COM_SECTIONEX_SETTINGS_NEW_LINE_AFTER_SECTION_LIST" description="COM_SECTIONEX_SETTINGS_NEW_LINE_AFTER_SECTION_LIST_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_filters" type="list" default="global" label="COM_SECTIONEX_SETTINGS_SE_FILTERS" description="COM_SECTIONEX_SETTINGS_SE_FILTERS_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_pagination" type="list" default="global" label="COM_SECTIONEX_SETTINGS_PAGINATION" description="COM_SECTIONEX_SETTINGS_PAGINATION_DESC">
+				<option value="-1">COM_SECTIONEX_SETTINGS_NO_PAGINATION</option>
+				<option value="5">COM_SECTIONEX_SETTINGS_NO_5</option>
+				<option value="10">COM_SECTIONEX_SETTINGS_NO_10</option>
+				<option value="15">COM_SECTIONEX_SETTINGS_NO_15</option>
+				<option value="20">COM_SECTIONEX_SETTINGS_NO_20</option>
+				<option value="20">COM_SECTIONEX_SETTINGS_NO_25</option>
+				<option value="30">COM_SECTIONEX_SETTINGS_NO_30</option>
+				<option value="50">COM_SECTIONEX_SETTINGS_NO_50</option>
+				<option value="100">COM_SECTIONEX_SETTINGS_NO_100</option>
+				<option value="0">COM_SECTIONEX_SETTINGS_ALL</option>
+				<option value="global">Use Global</option>
+			</field>
+
+			<field name="se_show_toc" type="list" default="global" label="COM_SECTIONEX_SETTINGS_TOC" description="COM_SECTIONEX_SETTINGS_TOC_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_toc_show_numitems" type="list" default="global" label="COM_SECTIONEX_SETTINGS_NUM_CATEGORY_ITEMS" description="COM_SECTIONEX_SETTINGS_CAT_ITEMS_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_toc_coolumns" type="list" default="global" label="COM_SECTIONEX_SETTINGS_NUM_TOC_COL" description="COM_SECTIONEX_SETTINGS_NUM_TOC_COL_DESC">
+				<option value="1">COM_SECTIONEX_SETTINGS_ONE</option>
+				<option value="2">COM_SECTIONEX_SETTINGS_TWO</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_category_name" type="list" default="global" label="COM_SECTIONEX_SETTINGS_CAT_NAME" description="COM_SECTIONEX_SETTINGS_CAT_NAME_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_category_description" type="list" default="global" label="COM_SECTIONEX_SETTINGS_CATEGORY_DESCRIPTION" description="COM_SECTIONEX_SETTINGS_CATEGORY_DESCRIPTION_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_empty_category" type="list" default="global" label="COM_SECTIONEX_SETTINGS_EMPTY_CATEGORIES" description="COM_SECTIONEX_SETTINGS_EMPTY_CAT_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_top_link" type="list" default="global" label="COM_SECTIONEX_SETTINGS_TOPLINK" description="COM_SECTIONEX_SETTINGS_TOPLINK_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="show_noauth" type="list" default="" label="COM_SECTIONEX_SETTINGS_SE_NOAUTH_LINKS" description="COM_SECTIONEX_SETTINGS_SE_NOAUTH_LINKS_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="">Use Global</option>
+			</field>
+			<field name="se_orderby_cat" type="list" default="global" label="COM_SECTIONEX_SETTINGS_CAT_ORDER" description="COM_SECTIONEX_SETTINGS_CAT_ORDER_DESC">
+				<option value="">Default</option>
+				<option value="alpha">COM_SECTIONEX_SETTINGS_TITLE_ALPHABETICAL</option>
+				<option value="ralpha">COM_SECTIONEX_SETTINGS_TITLE_REVERSE_ALPHABETICAL</option>
+				<option value="order">COM_SECTIONEX_SETTINGS_ORDERING</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_orderby_article" type="list" default="global" label="COM_SECTIONEX_SETTINGS_ARTICLE_ORDER" description="COM_SECTIONEX_SETTINGS_ART_ORDER_DESC">
+				<option value="">Default</option>
+				<option value="rdate">COM_SECTIONEX_SETTINGS_NEWEST_FIRST</option>
+				<option value="date">COM_SECTIONEX_SETTINGS_OLDEST_FIRST</option>
+				<option value="rupdate">COM_SECTIONEX_SETTINGS_NEWEST_FIRST_MODIFIED</option>
+				<option value="update">COM_SECTIONEX_SETTINGS_OLDEST_FIRST_MODIFIED</option>
+				<option value="alpha">COM_SECTIONEX_SETTINGS_TITLE_ALPHABETICAL</option>
+				<option value="ralpha">COM_SECTIONEX_SETTINGS_TITLE_REVERSE_ALPHABETICAL</option>
+				<option value="author">COM_SECTIONEX_SETTINGS_AUTHOR_ALPHABETICAL</option>
+				<option value="rauthor">COM_SECTIONEX_SETTINGS_AUTHOR_REVERSE_ALPHABETICAL</option>
+				<option value="hits">COM_SECTIONEX_SETTINGS_MOST_HITS</option>
+				<option value="rhits">COM_SECTIONEX_SETTINGS_LEAST_HITS</option>
+				<option value="order">COM_SECTIONEX_SETTINGS_ORDERING</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_table_headings" type="list" default="global" label="COM_SECTIONEX_SETTINGS_TABLE_HEADINGS" description="COM_SECTIONEX_SETTINGS_TABLE_HEADINGS_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_article_title_heading" type="text" default="" size="10" label="COM_SECTIONEX_SETTINGS_ITEM_TITLE_ALTERNATIVE" description="COM_SECTIONEX_SETTINGS_ITEM_TITLE_ALTERNATIVE_DESC" />
+			<field name="se_show_article_num" type="list" default="global" label="COM_SECTIONEX_SETTINGS_ARTICLE_ENUMERATION" description="COM_SECTIONEX_SETTINGS_ART_ENUM_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_article_title" type="list" default="global" label="COM_SECTIONEX_SETTINGS_ITEM_TITLE" description="COM_SECTIONEX_SETTINGS_ITEM_TITLE_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_create_date" type="list" default="global" label="COM_SECTIONEX_SETTINGS_CREATE_DATE_AND_TIME" description="COM_SECTIONEX_SETTINGS_CREATE_DATE_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="2">COM_SECTIONEX_SETTINGS_SHOW_AS_COMMENT</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_modify_date" type="list" default="global" label="COM_SECTIONEX_SETTINGS_MODIFIED_DATE_AND_TIME" description="COM_SECTIONEX_SETTINGS_UPDATE_DATE_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="2">COM_SECTIONEX_SETTINGS_SHOW_AS_COMMENT</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_time_format" type="list" default="global" label="COM_SECTIONEX_SETTINGS_DATE_FORMAT" description="COM_SECTIONEX_SETTINGS_DATE_FORMAT_DESC">
+				<!--<option value="DATE_FORMAT_LC">DATE_FORMAT_LC</option>-->
+				<option value="DATE_FORMAT_LC1">Monday, 01 February 2010</option>
+				<option value="DATE_FORMAT_LC2">Monday, 01 February 2010 22:45</option>
+				<option value="DATE_FORMAT_LC3">01 February 2010</option>
+				<option value="DATE_FORMAT_LC4">01.02.2010</option>
+				<option value="DATE_DBY">01 Feb 2010</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_user_time_zone" type="list" default="global"  label="COM_SECTIONEX_SETTINGS_USER_TIME_ZONE" description="COM_SECTIONEX_SETTINGS_USER_TIME_ZONE_DESCRIPTION">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_author" type="list" default="global" label="COM_SECTIONEX_SETTINGS_AUTHOR" description="COM_SECTIONEX_SETTINGS_AUTHOR_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="2">COM_SECTIONEX_SETTINGS_SHOW_AS_COMMENT</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_use_autocomplete" type="list" default="global" label="COM_SECTIONEX_SETTINGS_AUTO_COMPLETE" description="COM_SECTIONEX_SETTINGS_AUTO_COMPLETE_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_intro_text" type="list" default="global" label="COM_SECTIONEX_SETTINGS_SHOW_INTRO_TEXT" description="COM_SECTIONEX_SETTINGS_INTRO_TXT_DESC">
+				<option value="0">Hide</option>
+				<option value="2">COM_SECTIONEX_SETTINGS_SHOW_AS_COMMENT</option>
+				<option value="3">COM_SECTIONEX_SETTINGS_SHOW_AS_COMMENT_EXPANDABLE</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_intro_txt_init_epxanded" type="list" default="global" label="COM_SECTIONEX_SETTINGS_INTRO_TXT_INIT_EXPANDED" description="COM_SECTIONEX_SETTINGS_INTRO_TXT_INIT_EXPANDED">
+				<option value="0">COM_SECTIONEX_SETTINGS_COLLAPSED</option>
+				<option value="1">COM_SECTIONEX_SETTINGS_EXPANDED</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_images_in_intro_text" type="list" default="global" label="COM_SECTIONEX_SETTINGS_IMAGES_IN_INTRO_TEXT" description="COM_SECTIONEX_SETTINGS_IMAGES_IN_INTRO_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_intro_text_short" type="list" default="global" label="COM_SECTIONEX_SETTINGS_USE_SHORT_INTRO_TEXT" description="COM_SECTIONEX_SETTINGS_USE_SHORT_INTRO_TXT_DESC">
+				<option value="0">No</option>
+				<option value="1">COM_SECTIONEX_SETTINGS_SHORT_IF_IT_EXISTS</option>
+				<option value="2">COM_SECTIONEX_SETTINGS_SHORT_ONLY</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_voting" type="list" default="global" label="COM_SECTIONEX_SETTINGS_ITEM_VOTING" description="COM_SECTIONEX_SETTINGS_ITEM_VOTING_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="2">COM_SECTIONEX_SETTINGS_SHOW_AS_COMMENT</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_voting_count" type="list" default="global" label="COM_SECTIONEX_SETTINGS_ITEM_VOTING_COUNT" description="COM_SECTIONEX_SETTINGS_ITEM_VOTING_COUNT_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_hits" type="list" default="global" label="COM_SECTIONEX_SETTINGS_HITS" description="COM_SECTIONEX_SETTINGS_HITS_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="2">COM_SECTIONEX_SETTINGS_SHOW_AS_COMMENT</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_rss" type="list" default="global" label="COM_SECTIONEX_SETTINGS_RSS" description="COM_SECTIONEX_SETTINGS_RSS_DESC">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_sort_propagate" type="list" default="global" label="COM_SECTIONEX_SETTINGS_SORT_PROPAGATE" description="COM_SECTIONEX_SETTINGS_SORT_PROPAGATE_DESC">
+				<option value="0">COM_SECTIONEX_SETTINGS_MENU_SPECIFIC</option>
+				<option value="1">COM_SECTIONEX_SETTINGS_SESSION_WIDE</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_menu_behavior" type="list" default="global" label="COM_SECTIONEX_SETTINGS_MENU_BEHAVIOR" description="COM_SECTIONEX_SETTINGS_MENU_BEHAVIOR_DESC">
+				<option value="0">COM_SECTIONEX_SETTINGS_MENU_BEHAVIOR1</option>
+				<option value="1">COM_SECTIONEX_SETTINGS_MENU_BEHAVIOR2</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_sef_short_links" type="list" default="global" label="COM_SECTIONEX_SETTINGS_SHORT_SEF_LINKS" description="COM_SECTIONEX_SETTINGS_SHORT_SEF_LINKS_DESC">
+				<option value="0">COM_SECTIONEX_SETTINGS_SEF_NORMAL</option>
+				<option value="1">COM_SECTIONEX_SETTINGS_SEF_SHORT</option>
+				<option value="global">Use Global</option>
+			</field>
+
+		</fieldset>
+
+		<fieldset name="social" label="Social Settings">
+			<field name="se_show_facebook" type="list" default="global" label="COM_SECTIONEX_SETTINGS_SHOW_FACEBOOK" description="COM_SECTIONEX_SETTINGS_SHOW_FACEBOOK_DESC">
+				<option value="0">Hide</option>
+				<option value="2">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+			<field name="se_show_twitter" type="list" default="global" label="COM_SECTIONEX_SETTINGS_SHOW_TWITTER" description="COM_SECTIONEX_SETTINGS_SHOW_TWITTER_DESC">
+				<option value="0">Hide</option>
+				<option value="2">Show</option>
+				<option value="global">Use Global</option>
+			</field>
+
+		</fieldset>
+	</fields>
+</metadata>

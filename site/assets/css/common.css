@@ -1,0 +1,192 @@
+/**
+ * @package		SectionEx
+ * @copyright	Copyright (C) 2008 Robert Kuster. All rights reserved.
+ * @license		GNU/GPL, see LICENSE.php
+ * @link        http://www.stackideas.com  
+ *
+ * SectionEx is free software. This version may have been modified pursuant
+ * to the GNU General Public License, and as distributed it includes or
+ * is derivative of works licensed under the GNU General Public License or
+ * other free or open source software licenses.
+ * See COPYRIGHT.php for copyright notices and details.
+ */ 
+
+/* New Dialog */
+#edialog-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+	#edialog-wrapper #edialog {
+		background: #333;
+		position: fixed !important;
+		position: absolute; /* hack for internet explorer 6*/
+		z-index: 1000;
+		padding: 5px;
+		top: 50%;
+		left: 50%;
+	}
+
+	#edialog-wrapper #edialog-container {
+	
+	}
+
+	#edialog-wrapper #edialog-header div.left,
+	#edialog-wrapper #edialog-header div.right,
+	#edialog-wrapper #edialog-header div.middle {
+		height: 30px;
+	}
+
+	#edialog-wrapper #edialog-header div.left {
+		float: left;
+		width: 4px;
+		background: transparent url(../images/dialog/bg.gif) no-repeat 0 0;
+	}
+	
+	#edialog-wrapper #edialog-header div.right {
+		float: right;
+		width: 4px;
+		background: transparent url(../images/dialog/bg.gif) no-repeat 0 -60px;
+	}
+	
+	#edialog-wrapper #edialog-header div.middle {
+		margin: 0 4px;
+		background: transparent url(../images/dialog/bg.gif) repeat-x 0 -30px;
+		position: relative;
+	}
+	
+		#edialog-wrapper #edialog-header div.middle h3 {
+			margin: 0;
+			line-height: 29px;
+			padding: 0 0 0 5px;
+			color: #333;
+		}
+		
+		#edialog-wrapper #edialog-header div.middle div.close-button {
+			position: absolute;
+			height: 16px;
+			width: 16px;
+			top: 7px;
+			right: 3px;
+		}
+
+		#edialog-wrapper #edialog-header div.middle div.close-button a {
+			height: 16px;
+			width: 16px;
+			display: block;
+			text-indent: -9999px;
+			background: transparent url(../images/dialog/button-close.gif) no-repeat 0 0;
+			outline-style: none;
+		}
+
+		#edialog-wrapper #edialog-header div.middle div.close-button a:hover {
+			background: transparent url(../images/dialog/button-close.gif) no-repeat 0 -16px;
+		}
+
+
+	#edialog-wrapper #edialog-middle {
+		background: #fff;
+		border-bottom: solid 1px #333;
+	}
+
+		#edialog-wrapper #edialog-middle div.content {
+			padding: 10px;
+		}
+
+
+	#edialog-wrapper #edialog-footer div.left,
+	#edialog-wrapper #edialog-footer div.right,
+	#edialog-wrapper #edialog-footer div.middle {
+		height: 30px;
+	}
+
+	#edialog-wrapper #edialog-footer div.left {
+		float: left;
+		width: 4px;
+		background: transparent url(../images/dialog/bg.gif) no-repeat 0 -90px;
+	}
+
+	#edialog-wrapper #edialog-footer div.right {
+		float: right;
+		width: 4px;
+		background: transparent url(../images/dialog/bg.gif) no-repeat 0 -120px;
+	}
+	
+	#edialog-wrapper #edialog-footer div.middle {
+		margin: 0 4px;
+		background: #ccc;
+		line-height: 29px;
+		text-align: center;
+	}
+	
+	#edialog-wrapper #edialog-footer input.button {
+		background: transparent url(../images/dialog/top.gif) repeat-x 0 -30px;
+		border: solid 1px #666;
+		cursor: pointer;
+		color: #333;
+		margin: 5px 0 0;
+	}
+	
+	#edialog-wrapper #edialog-footer input.button-hover {
+		background: #666;
+		border: solid 1px #333;
+		color: #ccc;
+	}
+	
+	/* autocomplete styling */
+.autocomplete-w1 { 
+	background:url(img/shadow.png) no-repeat bottom right;
+	position:absolute; top:0px; left:0px; margin:8px 0 0 6px; 
+	/* IE6 fix: */ 
+	_background:none; 
+	_margin:0; 
+}
+
+.autocomplete { 
+	border:1px solid #999; 
+	background:#FFF; 
+	cursor:default; 
+	text-align:left; 
+	max-height:350px; 
+	overflow:auto; 
+	margin:-6px 6px 6px -6px; 
+	/* IE6 specific: */ 
+	_height:350px;  
+	_margin:0; 
+	_overflow-x:hidden; 
+}
+
+.autocomplete .selected { 
+	background:#F0F0F0; 
+}
+
+.autocomplete div { 
+	padding:2px 5px; 
+	white-space:nowrap; 
+}
+
+.autocomplete strong { 
+	font-weight:normal; 
+	color:#3399FF; 
+}
+
+#seartcllist_wrap table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+#section_ex table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+#section_ex .unpublished {
+	opacity: .50;
+	filter: alpha(opacity=50);
+	filter: "alpha(opacity=50)";
+}
